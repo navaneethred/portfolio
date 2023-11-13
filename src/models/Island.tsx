@@ -133,7 +133,7 @@ export function Island({ position, scale, rotation, isRotating, setIsRotating, s
             document.removeEventListener("keydown", handleKeyDown);
             document.removeEventListener("keyup", handleKeyUp);
         };
-    }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
+    }, [gl, handlePointerDown, handlePointerUp, handlePointerMove, handleKeyUp, handleKeyDown]);
 
 
     return (

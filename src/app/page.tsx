@@ -14,7 +14,7 @@ export default function Home() {
   const [currentStage, setCurrentStage] = useState<number | null>(1);
 
   const adjustIslandForScreenSize = () => {
-    let screenScale = window.innerWidth < 768 ? [0.9, 0.9, 0.9] : [1, 1, 1];
+    let screenScale = [1, 1, 1];
     let screenPosition = [0, -6.5, -43];
     let rotation = [0.1, 4.7, 0];
 
@@ -22,8 +22,8 @@ export default function Home() {
   };
 
   const adjustPlaneForScreenSize = () => {
-    let screenScale = window.innerWidth < 768 ? [1.5, 1.5, 1.5] : [3, 3, 3];
-    let screenPosition = window.innerWidth < 768 ? [0, -1.5, 0] : [0, -4, -4];
+    let screenScale = [3, 3, 3];
+    let screenPosition = [0, -4, -4];
 
     return [screenScale, screenPosition];
   };
